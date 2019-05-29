@@ -70,3 +70,11 @@ Rails.application.routes.draw do
 end
 ```
 16. **blog index** > ```<h1>Welcome !</h1>```
+
+## Output
+### Login
+![RailsUserAuthentication](https://user-images.githubusercontent.com/4152211/58561916-dcc89d00-8245-11e9-98c5-900cded08124.png)
+### SignUp
+![1](https://user-images.githubusercontent.com/4152211/58562014-0a154b00-8246-11e9-975c-29696d4cd552.png)
+### Welcome page
+![3](https://user-images.githubusercontent.com/4152211/58562083-287b4680-8246-11e9-846b-eb371798458c.png)
