@@ -1,31 +1,23 @@
-
-<div class="container">
-  <h2>Sign up</h2>
+<div class="wrapper fadeInDown">
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-  <%= render "devise/shared/error_messages", resource: resource %>
-  <div class="form-group">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
-  </div>
+<%= render "devise/shared/error_messages", resource: resource %>
+  <div id="formContent">
+      <div class="fadeIn first">
+       <h2>Sign up</h2>
+      </div>
+  <%= f.email_field :email, autofocus: true, autocomplete: "email", :class => "fadeIn second login-txt", id: 'login', placeholder: 'Email' %>
 
-  <div class="form-group">
-    <%= f.label :password %>
+
+<%= f.label :password %>
     <% if @minimum_password_length %>
     <em>(<%= @minimum_password_length %> characters minimum)</em>
     <% end %><br />
-    <%= f.password_field :password, autocomplete: "new-password" %>
-  </div>
+    <%= f.password_field :password, autocomplete: "new-password", :class => "fadeIn third login-txt", id: 'password', placeholder: 'Password' %>
 
-  <div class="form-group">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+<%= f.password_field :password_confirmation, autocomplete: "new-password", :class => "fadeIn third login-txt", id: 'password', placeholder: 'Confirm password' %>
+  
+  <%= f.submit "Sign up", :class => "fadeIn fourth" %>
   </div>
-
-  <div class="actions">
-    <%= f.submit "Sign up" %>
-  </div>
-
 <% end %>
-
 <%= render "devise/shared/links" %>
 </div>

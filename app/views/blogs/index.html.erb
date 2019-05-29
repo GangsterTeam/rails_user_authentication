@@ -1,5 +1,12 @@
-<div class="container">
-<div class="alert alert-info"> <%= notice%> </div>
-
-<p><%= @user %></p>
-</div>
+<nav class="navbar navbar-inverse header-back">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Welcome</a>
+    </div>
+    
+    <ul class="nav navbar-nav navbar-right">
+      <li class="header-txt"><%= @user %></li>
+      <li><span class="glyphicon glyphicon-log-in"></span><%= link_to('Logout', destroy_user_session_path, method: :delete) %></li>
+    </ul>
+  </div>
+</nav>
