@@ -69,4 +69,4 @@ Rails.application.routes.draw do
   end
 end
 ```
-16. **blog index** > <h1>Welcome !</h1>
+16. **blog index** > ```<h1>Welcome !</h1>```
